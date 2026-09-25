@@ -1,0 +1,228 @@
+[
+  {
+    "id": "family-emergency-voice-clone",
+    "title": "Family emergency calls using AI-cloned voices",
+    "status": "approved",
+    "summary": "Callers pretend to be a relative or friend in trouble — an accident, arrest or stranded abroad — and ask for money fast. AI tools can clone a voice from a short audio clip, so the call may sound exactly like someone you know.",
+    "scam_type": "impersonation",
+    "channels": [
+      "phone",
+      "voice_clone",
+      "video_call"
+    ],
+    "impersonated_entity": "Family member or friend",
+    "manipulation_techniques": [
+      "urgency",
+      "familiarity",
+      "fear",
+      "secrecy"
+    ],
+    "requested_action": "pay",
+    "payment_methods": [
+      "wire",
+      "crypto",
+      "gift_card"
+    ],
+    "target_population": [
+      "older_adults",
+      "general_public"
+    ],
+    "geography": [
+      "US"
+    ],
+    "warning_signs": [
+      "A familiar voice asking for money urgently",
+      "Being told not to tell other family members",
+      "Payment requested by wire transfer, cryptocurrency or gift cards"
+    ],
+    "verification_steps": [
+      "Hang up and call the person back on a number you already have for them",
+      "Check with another family member",
+      "Agree a secret family code word to use in real emergencies"
+    ],
+    "sources": [
+      {
+        "name": "U.S. Federal Trade Commission",
+        "title": "Scammers use AI to enhance their family emergency schemes",
+        "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+        "published": "2023-03-20"
+      },
+      {
+        "name": "FBI Internet Crime Complaint Center (IC3)",
+        "title": "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud",
+        "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+        "published": "2024-12-03"
+      }
+    ],
+    "confidence": "corroborated",
+    "last_reviewed": "2026-09-26"
+  },
+  {
+    "id": "unpaid-toll-smishing",
+    "title": "Fake \"unpaid toll\" text messages",
+    "status": "approved",
+    "summary": "Texts claiming to be from a toll agency say you owe a small unpaid toll and will face late fees. The link leads to a fake site built to steal card details and personal information.",
+    "scam_type": "phishing",
+    "channels": [
+      "sms"
+    ],
+    "impersonated_entity": "State toll agencies",
+    "manipulation_techniques": [
+      "urgency",
+      "authority",
+      "fear"
+    ],
+    "requested_action": "click_link",
+    "payment_methods": [
+      "card"
+    ],
+    "target_population": [
+      "general_public"
+    ],
+    "geography": [
+      "US"
+    ],
+    "warning_signs": [
+      "An unexpected text about a small unpaid toll",
+      "A threat of late fees or penalties",
+      "A link to pay that doesn't go to your toll agency's official site"
+    ],
+    "verification_steps": [
+      "Don't click the link or reply",
+      "Check your account on your toll agency's official website or app, typed in yourself",
+      "Forward the text to 7726 (SPAM) and delete it"
+    ],
+    "sources": [
+      {
+        "name": "FBI Internet Crime Complaint Center (IC3)",
+        "title": "Smishing Scam Regarding Debt for Road Toll Services",
+        "url": "https://www.ic3.gov/PSA/2024/PSA240412",
+        "published": "2024-04-12"
+      },
+      {
+        "name": "U.S. Federal Trade Commission",
+        "title": "Got a text about unpaid tolls? It's probably a scam",
+        "url": "https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam",
+        "published": "2025-01-17"
+      }
+    ],
+    "confidence": "corroborated",
+    "last_reviewed": "2026-09-26"
+  },
+  {
+    "id": "phantom-hacker-tech-support",
+    "title": "\"Phantom hacker\" tech-support and bank-impersonation scams",
+    "status": "approved",
+    "summary": "A pop-up or call claims your computer or bank account has been hacked. A fake tech-support agent, then a fake bank or government official, convinces you to move your savings to a \"safe\" account they control.",
+    "scam_type": "tech_support",
+    "channels": [
+      "pop_up",
+      "phone",
+      "email"
+    ],
+    "impersonated_entity": "Tech companies, banks, government agencies",
+    "manipulation_techniques": [
+      "fear",
+      "authority",
+      "urgency",
+      "secrecy"
+    ],
+    "requested_action": "install_app",
+    "payment_methods": [
+      "wire",
+      "crypto",
+      "cash",
+      "gold"
+    ],
+    "target_population": [
+      "older_adults"
+    ],
+    "geography": [
+      "US"
+    ],
+    "warning_signs": [
+      "A pop-up or call telling you to phone a number about a virus or hack",
+      "Requests to install software or give remote access to your computer",
+      "Being told to move money to a \"safe\" or \"protected\" account"
+    ],
+    "verification_steps": [
+      "Don't call numbers shown in pop-ups; close the browser or restart the device",
+      "Never give remote access to someone who contacted you",
+      "Call your bank using the number on your card before moving any money"
+    ],
+    "sources": [
+      {
+        "name": "FBI Internet Crime Complaint Center (IC3)",
+        "title": "'Phantom Hacker' Scams Target Senior Citizens and Result in Victims Losing their Life Savings",
+        "url": "https://www.ic3.gov/PSA/2023/PSA230929",
+        "published": "2023-09-29"
+      },
+      {
+        "name": "U.S. Federal Trade Commission",
+        "title": "How To Spot, Avoid, and Report Tech Support Scams",
+        "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams",
+        "published": null
+      }
+    ],
+    "confidence": "corroborated",
+    "last_reviewed": "2026-09-26"
+  },
+  {
+    "id": "digital-arrest-india",
+    "title": "\"Digital arrest\" video-call scams (India)",
+    "status": "approved",
+    "summary": "Callers pose as police, CBI, customs, ED or other officials and claim you are linked to a crime. They keep you on a video call, say you are under \"digital arrest\", and demand money to clear your name.",
+    "scam_type": "impersonation",
+    "channels": [
+      "phone",
+      "video_call",
+      "messaging_app"
+    ],
+    "impersonated_entity": "Police, CBI, NCB, customs, ED, RBI and courts",
+    "manipulation_techniques": [
+      "authority",
+      "fear",
+      "isolation",
+      "secrecy",
+      "urgency"
+    ],
+    "requested_action": "pay",
+    "payment_methods": [
+      "bank_transfer",
+      "upi"
+    ],
+    "target_population": [
+      "general_public",
+      "older_adults"
+    ],
+    "geography": [
+      "IN"
+    ],
+    "warning_signs": [
+      "Claims that a parcel, SIM card or bank account in your name is linked to a crime",
+      "Being told to stay on a video call and not contact anyone",
+      "Demands for money to \"verify\" your funds or avoid arrest"
+    ],
+    "verification_steps": [
+      "Remember: police and investigating agencies do not arrest people over video calls",
+      "End the call and contact your local police station directly",
+      "Report at cybercrime.gov.in or call the 1930 helpline"
+    ],
+    "sources": [
+      {
+        "name": "Ministry of Home Affairs, Government of India (PIB)",
+        "title": "Digital Arrest Scam",
+        "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2082761&reg=48&lang=2",
+        "published": "2024-12-10"
+      },
+      {
+        "name": "Deccan Herald",
+        "title": "Amid rise in 'Digital Arrest' cases, Indian Cyber Crime Coordination Centre issues advisory for citizens",
+        "url": "https://www.deccanherald.com/india/amid-rise-in-digital-arrest-cases-indian-cyber-crime-coordination-centre-issues-advisory-for-citizens-3221509",
+        "published": "2024-10-06"
+      }
+    ],
+    "confidence": "corroborated",
+    "last_reviewed": "2026-09-26"
+  }
+]

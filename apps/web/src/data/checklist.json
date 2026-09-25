@@ -1,0 +1,35 @@
+[
+  {
+    "phase": "pause",
+    "title": "Pause",
+    "tagline": "Slow down before you respond.",
+    "items": [
+      "Stop before you reply, click, pay or share anything.",
+      "Notice pressure: deadlines, threats, secrecy or big promises.",
+      "Notice your feelings. Fear, panic or excitement is a signal to slow down.",
+      "Remember: a genuine organization will give you time to check."
+    ]
+  },
+  {
+    "phase": "prove",
+    "title": "Prove",
+    "tagline": "Verify through a channel you already trust.",
+    "items": [
+      "Don't use the phone number, link or email in the message.",
+      "Contact the person or organization using details you look up yourself — the number on your card, statement or their official website.",
+      "For a \"loved one\" in trouble, call them back on a number you already have, or use a family code word.",
+      "Talk it through with someone you trust before acting."
+    ]
+  },
+  {
+    "phase": "protect",
+    "title": "Protect",
+    "tagline": "Guard your money and information.",
+    "items": [
+      "Never share passwords, one-time codes (OTPs) or PINs.",
+      "Never pay with gift cards, cryptocurrency or wire transfers because someone contacted you.",
+      "Don't install apps or give remote access to someone who contacted you.",
+      "If you've already paid or shared details, contact your bank immediately and report it."
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "region": "US",
+    "label": "United States",
+    "items": [
+      {
+        "name": "Report fraud to the FTC",
+        "description": "Report scams, fraud and bad business practices to the Federal Trade Commission.",
+        "url": "https://reportfraud.ftc.gov"
+      },
+      {
+        "name": "FBI Internet Crime Complaint Center (IC3)",
+        "description": "Report internet-enabled crime, including online payment, investment and impersonation scams.",
+        "url": "https://www.ic3.gov"
+      },
+      {
+        "name": "IdentityTheft.gov",
+        "description": "Get a personal recovery plan if someone used your personal information.",
+        "url": "https://www.identitytheft.gov"
+      },
+      {
+        "name": "Forward scam texts to 7726",
+        "description": "Forward suspicious text messages to 7726 (SPAM) so your carrier can block them.",
+        "url": null
+      },
+      {
+        "name": "AARP Fraud Watch Network Helpline",
+        "description": "Free help line for fraud victims and their families: 877-908-3360.",
+        "url": "https://www.aarp.org/money/scams-fraud/helpline/"
+      }
+    ]
+  },
+  {
+    "region": "IN",
+    "label": "India",
+    "items": [
+      {
+        "name": "National Cyber Crime Reporting Portal",
+        "description": "Report cyber fraud and financial crime online.",
+        "url": "https://cybercrime.gov.in"
+      },
+      {
+        "name": "Cyber fraud helpline: 1930",
+        "description": "Call 1930 as soon as possible after a financial fraud — quick reporting improves the chance of stopping the money.",
+        "url": "tel:1930"
+      },
+      {
+        "name": "Sanchar Saathi (Chakshu)",
+        "description": "Report suspected fraud calls, SMS and WhatsApp messages.",
+        "url": "https://sancharsaathi.gov.in"
+      }
+    ]
+  },
+  {
+    "region": "OTHER",
+    "label": "Everywhere else",
+    "items": [
+      {
+        "name": "Your bank or payment provider",
+        "description": "If money has left your account, call your bank using the number on your card — speed matters.",
+        "url": null
+      },
+      {
+        "name": "Local police",
+        "description": "Report fraud to your local police or national fraud reporting service.",
+        "url": null
+      }
+    ]
+  }
+]

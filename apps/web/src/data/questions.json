@@ -1,0 +1,134 @@
+[
+  {
+    "id": "urgency",
+    "text": "Are you being pushed to act right now, or told something bad will happen if you wait?",
+    "hint": "For example: \"your account will be closed today\", \"pay within 1 hour\", \"a warrant will be issued\".",
+    "weight": 2,
+    "critical": false,
+    "technique": "urgency",
+    "flag": "Pressure to act immediately",
+    "why": "Scammers create time pressure so you don't stop to check. Genuine organizations give you time to verify.",
+    "action": { "phase": "pause", "text": "Ignore any deadline in the message. A real organization will still be there after you check." }
+  },
+  {
+    "id": "unexpected",
+    "text": "Did this contact come out of the blue — a call, text, email, message or pop-up you weren't expecting?",
+    "hint": "Including messages that look like they come from a company you use.",
+    "weight": 1,
+    "critical": false,
+    "technique": "unsolicited_contact",
+    "flag": "Unexpected contact",
+    "why": "Most scams begin with contact you didn't start. That alone isn't proof of a scam, but it means you can't rely on the sender's claims.",
+    "action": { "phase": "prove", "text": "Don't use the phone number, link or reply address in the message. Look up the organization's contact details yourself." }
+  },
+  {
+    "id": "authority",
+    "text": "Does the person claim to be from a government agency, police, bank, tech company, delivery service or your employer?",
+    "hint": "Official-looking logos, badge numbers, case numbers and caller ID can all be faked.",
+    "weight": 2,
+    "critical": false,
+    "technique": "authority",
+    "flag": "Claims to be an authority or well-known organization",
+    "why": "Impersonating trusted organizations is one of the most common and costly scam tactics. Caller ID, email names and logos are easy to fake.",
+    "action": { "phase": "prove", "text": "Hang up or close the message, then contact the organization through its official website or the number on your card or statement." }
+  },
+  {
+    "id": "loved_one",
+    "text": "Is someone claiming to be a family member, friend or boss who is in trouble or needs urgent help?",
+    "hint": "Voices and videos can now be cloned with AI from short clips found online.",
+    "weight": 2,
+    "critical": false,
+    "technique": "familiarity",
+    "flag": "A \"loved one\" or boss in urgent trouble",
+    "why": "Family-emergency and fake-boss scams play on your wish to help. AI voice and video cloning makes these much more convincing than before.",
+    "action": { "phase": "prove", "text": "Call the person back on a number you already have for them, or check with another family member or colleague. Agree a family code word for emergencies." }
+  },
+  {
+    "id": "payment_method",
+    "text": "Are you being asked to pay with gift cards, cryptocurrency, a wire transfer, cash, or a payment app (such as Zelle, Venmo, Cash App or UPI)?",
+    "hint": "Or to buy gold, or move money to a \"safe\" account.",
+    "weight": 3,
+    "critical": true,
+    "technique": "irreversible_payment",
+    "flag": "Hard-to-reverse payment method",
+    "why": "These payment methods are hard or impossible to reverse, which is why scammers demand them. No real government agency or business asks to be paid in gift cards.",
+    "action": { "phase": "protect", "text": "Do not send the payment. If you already did, contact your bank or the payment provider immediately and ask them to stop or reverse it." }
+  },
+  {
+    "id": "credentials",
+    "text": "Are you being asked for a password, one-time code (OTP), PIN, or your full card, account or ID number?",
+    "hint": "Including \"just read me the code we sent you\".",
+    "weight": 3,
+    "critical": true,
+    "technique": "credential_request",
+    "flag": "Request for passwords, codes or sensitive numbers",
+    "why": "One-time codes and passwords give direct access to your accounts. Banks and legitimate services never ask you to read them out.",
+    "action": { "phase": "protect", "text": "Never share one-time codes, passwords or PINs. If you already did, change the password and call your bank using the number on your card." }
+  },
+  {
+    "id": "secrecy",
+    "text": "Have you been told to keep this secret, or not to talk to your bank, family or anyone else?",
+    "hint": "Or told to lie to your bank about why you're moving money.",
+    "weight": 3,
+    "critical": true,
+    "technique": "secrecy",
+    "flag": "Told to keep it secret",
+    "why": "Secrecy cuts you off from people who could spot the scam. A request to hide something from your bank or family is a serious warning sign.",
+    "action": { "phase": "prove", "text": "Tell someone you trust about the request before doing anything. Secrecy requests are a reason to talk, not to stay quiet." }
+  },
+  {
+    "id": "device_access",
+    "text": "Are you being asked to click a link, scan a QR code, install an app, or let someone access your device remotely?",
+    "hint": "Such as screen-sharing or \"support\" apps.",
+    "weight": 2,
+    "critical": false,
+    "technique": "device_access",
+    "flag": "Asked to click, install or give remote access",
+    "why": "Links and apps can steal passwords or install malware. Remote access gives a stranger control of your device and accounts.",
+    "action": { "phase": "protect", "text": "Don't click, scan or install. If someone already has remote access, disconnect from the internet, and have the device checked." }
+  },
+  {
+    "id": "bypass_process",
+    "text": "Are you being asked to skip a normal process — change bank details, move money to protect it, or avoid official channels?",
+    "hint": "For example: a supplier's \"new\" bank account, or a caller who says your money isn't safe where it is.",
+    "weight": 3,
+    "critical": true,
+    "technique": "process_bypass",
+    "flag": "Asked to bypass normal procedures",
+    "why": "Scams often succeed by getting people to step outside the checks that normally protect them. Real organizations don't ask you to move money to keep it safe.",
+    "action": { "phase": "prove", "text": "Follow your usual process. Confirm any change of bank details by calling a known contact, not one given in the request." }
+  },
+  {
+    "id": "too_good",
+    "text": "Does it promise a prize, refund, job, investment return or relationship that seems too good to be true?",
+    "hint": "Including guaranteed returns, easy money for simple online tasks, or a new online partner who needs money.",
+    "weight": 2,
+    "critical": false,
+    "technique": "lure",
+    "flag": "An offer that seems too good to be true",
+    "why": "Promises of easy money or guaranteed returns are a common hook for investment, job and romance scams.",
+    "action": { "phase": "prove", "text": "Research the offer independently. Never pay a fee to receive a prize, job or refund." }
+  },
+  {
+    "id": "mismatch",
+    "text": "Does the email address, phone number or website look slightly off, or did they ask you to move to another app (like WhatsApp or Telegram)?",
+    "hint": "Look for misspellings, extra words or unusual endings in addresses.",
+    "weight": 2,
+    "critical": false,
+    "technique": "spoofing",
+    "flag": "Contact details don't match or moved to another app",
+    "why": "Look-alike addresses and switching to private messaging apps help scammers avoid detection and appear legitimate.",
+    "action": { "phase": "prove", "text": "Compare the contact details with ones you already have on file. Type the organization's web address yourself rather than using a link." }
+  },
+  {
+    "id": "emotion",
+    "text": "Is the message making you feel scared, panicked, ashamed or very excited?",
+    "hint": "Strong emotions make it harder to think clearly — that's the point.",
+    "weight": 1,
+    "critical": false,
+    "technique": "emotional_manipulation",
+    "flag": "Strong emotional pressure",
+    "why": "Fear, shame and excitement push people to act before thinking. Noticing the feeling is a cue to slow down.",
+    "action": { "phase": "pause", "text": "Step away for a few minutes. Strong emotion is a signal to slow down, not speed up." }
+  }
+]

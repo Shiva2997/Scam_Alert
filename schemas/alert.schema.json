@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/OWNER/scam-aware/schemas/alert.schema.json",
+  "title": "Scam Aware alert",
+  "description": "A scam alert shown to users. Taxonomy v0. See docs/taxonomy.md for allowed values and definitions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "title", "status", "summary", "scam_type", "channels", "manipulation_techniques",
+    "requested_action", "geography", "warning_signs", "verification_steps", "sources",
+    "confidence", "last_reviewed"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 5, "maxLength": 120 },
+    "status": { "enum": ["draft", "approved", "retired"] },
+    "summary": { "type": "string", "minLength": 20, "maxLength": 600 },
+    "scam_type": {
+      "enum": ["impersonation", "phishing", "investment", "romance", "tech_support", "job", "shopping", "prize_lottery", "extortion", "business_email_compromise", "other"]
+    },
+    "channels": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["sms", "email", "phone", "voice_clone", "video_call", "messaging_app", "social", "pop_up", "website", "in_person", "mail", "other"] }
+    },
+    "impersonated_entity": { "type": ["string", "null"] },
+    "manipulation_techniques": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["urgency", "authority", "fear", "secrecy", "familiarity", "isolation", "greed", "romance", "reciprocity", "scarcity", "social_proof", "emotional_manipulation"] }
+    },
+    "requested_action": {
+      "enum": ["pay", "share_credentials", "share_personal_info", "install_app", "click_link", "grant_remote_access", "change_bank_details", "move_money", "other"]
+    },
+    "payment_methods": {
+      "type": "array", "uniqueItems": true,
+      "items": { "enum": ["gift_card", "crypto", "wire", "bank_transfer", "p2p_app", "upi", "card", "cash", "gold", "other"] }
+    },
+    "target_population": {
+      "type": "array", "uniqueItems": true,
+      "items": { "enum": ["general_public", "older_adults", "students", "job_seekers", "small_business", "immigrants", "military", "other"] }
+    },
+    "geography": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "type": "string", "description": "ISO 3166-1 alpha-2 country code, or 'global'", "pattern": "^([A-Z]{2}|global)$" }
+    },
+    "warning_signs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 5 } },
+    "verification_steps": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 5 } },
+    "sources": {
+      "type": "array",
+      "minItems": 2,
+      "description": "At least two sources. They must also be from independent publishers; that check happens in code (src/lib/alerts.ts, later the corroboration engine).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "title", "url", "published"],
+        "properties": {
+          "name": { "type": "string", "description": "Publisher" },
+          "title": { "type": "string" },
+          "url": { "type": "string", "pattern": "^https://" },
+          "published": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+        }
+      }
+    },
+    "confidence": { "enum": ["corroborated", "emerging", "insufficient"] },
+    "last_reviewed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  }
+}

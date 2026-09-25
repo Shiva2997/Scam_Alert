@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/* Design tokens. Colors are CSS variables so dark mode is one override. */
+:root {
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-2: #eeebe3;
+  --ink: #1b2424;
+  --muted: #55605f;
+  --line: #d9d4c7;
+  --brand: #0f4c4d;
+  --brand-ink: #ffffff;
+  --brand-soft: #dcebea;
+  --pause: #9a5b00;
+  --pause-soft: #fbefd9;
+  --prove: #1f5aa6;
+  --prove-soft: #e1ebf8;
+  --protect: #2d6a3e;
+  --protect-soft: #e0f0e3;
+  --strong: #a3261c;
+  --strong-soft: #fbe4e1;
+  --some: #8a5a00;
+  --some-soft: #fcefd6;
+  --few: #3d5a5a;
+  --few-soft: #e3ecec;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111716;
+    --surface: #1a2221;
+    --surface-2: #232d2c;
+    --ink: #eef2f1;
+    --muted: #a8b4b2;
+    --line: #34403f;
+    --brand: #7cc7c3;
+    --brand-ink: #0b1b1b;
+    --brand-soft: #1d3534;
+    --pause: #f2b75b;
+    --pause-soft: #33280f;
+    --prove: #8db8f0;
+    --prove-soft: #17263a;
+    --protect: #86c996;
+    --protect-soft: #16301d;
+    --strong: #f59a90;
+    --strong-soft: #3a1a17;
+    --some: #f2b75b;
+    --some-soft: #33280f;
+    --few: #a9c4c3;
+    --few-soft: #1f2d2c;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-pause: var(--pause);
+  --color-pause-soft: var(--pause-soft);
+  --color-prove: var(--prove);
+  --color-prove-soft: var(--prove-soft);
+  --color-protect: var(--protect);
+  --color-protect-soft: var(--protect-soft);
+  --color-strong: var(--strong);
+  --color-strong-soft: var(--strong-soft);
+  --color-some: var(--some);
+  --color-some-soft: var(--some-soft);
+  --color-few: var(--few);
+  --color-few-soft: var(--few-soft);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  /* Slightly larger base size: many users are older adults. Respects browser zoom/font settings. */
+  font-size: 106.25%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Main receives programmatic focus on navigation (for screen readers); don't draw a ring around the page. */
+main:focus,
+main:focus-visible {
+  outline: none;
+}
